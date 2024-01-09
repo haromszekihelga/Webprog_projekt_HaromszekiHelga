@@ -1,0 +1,94 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c8bcaf;
+}
+
+nav{
+    background-color: #5c4935;
+    padding:20px 0px;
+}
+
+header, footer {
+    background-color: #bca690;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+ul{
+    margin:0;
+    }
+
+    ul.menu {
+        background-color: #5c4935;
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    ul.menu li { position: relative; }
+    ul.menu li a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #baa085;
+        text-decoration: none;
+        transition: all .5s;
+    }
+    
+    ul.menu li:hover > a,
+    ul.menu li a:hover {
+        color: #FFFFFF;
+        background-color: #c8bcaf;
+    }
+
+    ul.menu li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #FDF2E9;
+
+        padding: 0;
+        list-style: none;
+    }
+    ul.menu li:hover ul {
+        display: block;
+    }
+    ul.menu li ul a { white-space: nowrap; }
+
+
+main {
+    padding: 20px;
+}
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
